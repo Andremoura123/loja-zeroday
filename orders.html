@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Pedidos - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://i.imgur.com/7JJrdlo.png" alt="Logo ZeroDay" id="footer-logo">
+                <span>ZeroDay</span>
+            </div>
+            <ul>
+                <li><a href="admin.html">Adicionar Produto</a></li>
+                <li><a href="index.html">Ver Loja</a></li>
+                <li><a href="#" id="logout-button">Sair</a></li>
+                <li><a href="manage-products.html">Gerenciar Produtos</a></li> </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="orders-container">
+            <h1>Histórico de Pedidos</h1>
+            <table id="orders-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Cliente</th>
+                        <th>Email</th>
+                        <th>Produto</th>
+                        <th>Status</th>
+                        <th>Ações</th> </tr>
+                    </tr>
+                </thead>
+                <tbody id="orders-tbody">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-column">
+                <div class="logo">
+                <img src="https://i.imgur.com/7JJrdlo.png" alt="Logo ZeroDay" id="footer-logo">
+                <span>ZeroDay</span>
+            </div>
+                <p>WELCOME TO ZERODAY STORE.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Políticas</h4>
+                <ul>
+                    <li><a href="terms.html">Termos de serviço</a></li>
+                    <li><a href="#">Políticas de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Confira nossas redes sociais</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.gg/dvdCEvUmbX" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 ZeroDay. Todos os direitos reservados.</p>
+            <p>Powered by Enzemby</p> </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

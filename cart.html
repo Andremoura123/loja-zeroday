@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho - ZeroDay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    
+    <header>
+        <div class="top-bar"><a href="#">LINK SERVER DISCORD CLICK HERE</a></div>
+        <div class="announcement-bar"><span>CUPOM: ZERODAY10 🔥 10% OFF</span></div>
+        <nav class="main-header">
+            <div class="logo">
+                <img src="https://i.imgur.com/7JJrdlo.png" alt="Logo ZeroDay" id="footer-logo">
+                <span>ZeroDay</span>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Pesquisar produto...">
+            </div>
+            <div class="header-actions">
+                <a href="cart.html" class="action-button cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                    <span>Carrinho</span>
+                </a>
+                <a href="login.html" class="login-button">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-title-bar">
+            <h2>Carrinhos de compras</h2>
+            <p>Nesta página, você encontra os produtos adicionados ao seu carrinho.</p>
+        </div>
+        
+        <div class="cart-page-grid">
+            <div class="payment-info">
+                <h3>Informações de pagamento</h3>
+                <div class="payment-method-box">
+                    <div class="payment-option">
+                        <input type="radio" id="pix" name="payment_method" value="pix" checked>
+                        <label for="pix">Pix</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="card" name="payment_method" value="card">
+                        <label for="card">Cartão de Crédito/Débito</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="mp" name="payment_method" value="mp">
+                        <label for="mp">Mercado Pago</label>
+                    </div>
+                </div>
+                <div class="coupon-section">
+                    <h4>Cupom de desconto</h4>
+                    <p>Adicione desconto em seu pedido!</p>
+                    <div class="coupon-input-group">
+                        <input type="text" id="coupon-code" placeholder="Seu cupom aqui">
+                        <button id="apply-coupon-btn">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-products">
+                <h3>Produtos no carrinho - <span id="cart-item-count">1 Item</span></h3>
+                <div id="cart-items-detailed">
+                    </div>
+            </div>
+
+            <div class="order-summary">
+                <h3>Resumo da compra</h3>
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span id="summary-subtotal">R$ 0,00</span>
+                </div>
+                <div class="summary-line" id="discount-line" style="display: none;">
+                    <span>Desconto</span>
+                    <span id="summary-discount">- R$ 0,00</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="summary-total">R$ 0,00</span>
+                </div>
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Li e concordo com os <a href="#">Termos de Serviço</a></label>
+                </div>
+                <button id="checkout-button">Continuar a Comprar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-column">
+                <div class="logo">
+                <img src="https://i.imgur.com/7JJrdlo.png" alt="Logo ZeroDay" id="footer-logo">
+                <span>ZeroDay</span>
+            </div>
+                <p>WELCOME TO ZERODAY STORE.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Políticas</h4>
+                <ul>
+                    <li><a href="terms.html">Termos de serviço</a></li>
+                    <li><a href="#">Políticas de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Confira nossas redes sociais</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.gg/dvdCEvUmbX" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 ZeroDay. Todos os direitos reservados.</p>
+            <p>Powered by Enzemby</p> </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Ignorar a pasta de dependências
+node_modules
+
+# Ignorar o arquivo de senhas local
+.env
+
+# Ignorar arquivos executáveis desnecessários
+ngrok.exe
